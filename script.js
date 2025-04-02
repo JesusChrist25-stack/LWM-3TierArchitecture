@@ -1,6 +1,6 @@
 document.getElementById("loginButton").addEventListener("click", function () {
     // Backend API URL (Make sure ALB listens on HTTP, not port 5000)
-    const backendURL = "http://BackendLB-url.com/login";  // Replace with actual ALB DNS
+    const backendURL = "internal-AppserverLoadBalancer-1297672652.us-east-1.elb.amazonaws.com";  // Replace with actual ALB DNS
 
     fetch(backendURL, {
         method: "GET",
