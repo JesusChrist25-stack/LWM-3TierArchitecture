@@ -18,7 +18,7 @@ def login():
     try:
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor(dictionary=True)
-        cursor.execute("SELECT * FROM users LIMIT 1;")  # Adjust query as needed
+        cursor.execute("SELECT * FROM users LIMIT 3;")  # Adjust query as needed
         user = cursor.fetchone()
         cursor.close()
         conn.close()
